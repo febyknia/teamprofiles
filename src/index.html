@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive team section</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Replace the animated-bg div with this new elegant background -->
+<div class="elegant-bg">
+    <div class="gradient-wave"></div>
+    <canvas id="particleCanvas"></canvas>
+</div>
+
+<!-- Remove the old floating circles -->
+<!-- <div class="animated-bg">
+    <div class="floating-circle circle1"></div>
+    <div class="floating-circle circle2"></div>
+    <div class="floating-circle circle3"></div>
+    <div class="floating-circle circle4"></div>
+    <div class="floating-circle circle5"></div>
+</div> -->
+
+	<header class="header">
+		<div class="header-container">
+			<div class="date">
+				<span id="current-date">07 March 2025</span>
+			</div>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#home" class="active">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#jobdesk">Jobdesk</a></li>
+					<li><a href="#thanks">Connect</a></li>
+				</ul>
+			</nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+		</div>
+	</header>
+
+	<section class="team">
+		<div id="home" class="center">
+			<h1 class="moving-gradient">Our Best Team</h1>
+		</div>
+
+		<div id="team" class="team-content">
+			<div class="box floating">
+				<img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ibnu.jpg-QNVljLkM0GKxen18bhzsOJwGcNU6HB.jpeg">
+				<h3>Ibnu Faiz</h3>
+				<h5>233140707111118</h5>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/ibnu-jaisyurrahman-faiz-119491289" target="_blank"><i class="ri-linkedin-fill"></i></a>
+					<a href="https://github.com/kinu-nu" target="_blank"><i class="ri-github-fill"></i></a>
+					<a href="https://www.instagram.com/ibnu_faiz_" target="_blank"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box floating" style="animation-delay: 0.2s;">
+				<img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/feby.jpg-iNm7hVZXghR9FiBP8wLU3jBW8gTt0M.jpeg">
+				<h3>Feby Putri</h3>
+				<h5>233140701111003</h5>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/febyknia" target="_blank"><i class="ri-linkedin-fill"></i></a>
+					<a href="https://github.com/febyknia" target="_blank"><i class="ri-github-fill"></i></a>
+					<a href="https://www.instagram.com/febyknia" target="_blank"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box floating" style="animation-delay: 0.4s;">
+				<img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/salman.jpg-7JPHzus2VZnezfvLQjMr7AVBGroFQq.jpeg">
+				<h3>Salman Alfarizi</h3>
+				<h5>233140707111124</h5>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/salman-alfarizi-ardiansyah-859ab1288" target="_blank"><i class="ri-linkedin-fill"></i></a>
+					<a href="https://github.com/Salmann25" target="_blank"><i class="ri-github-fill"></i></a>
+					<a href="https://www.instagram.com/salmannalf25" target="_blank"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box floating" style="animation-delay: 0.6s;">
+				<img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nana.jpg-TbzuZRqtzB2xQoVpr07lJSZZiCzLIs.jpeg">
+				<h3>Ananda Abidin</h3>
+				<h5>233140707111122</h5>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/ananda-setiawati-aba4ba222/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+					<a href="https://github.com/anandaast" target="_blank"><i class="ri-github-fill"></i></a>
+					<a href="https://www.instagram.com/anaandaast" target="_blank"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box floating" style="animation-delay: 0.8s;">
+				<img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/willi.jpg-1vtWiVnSLnS4akL028UIJUOftCCLQ9.jpeg">
+				<h3>Williano Wong</h3>
+				<h5>233140707111126</h5>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/williano-w-ba5594289" target="_blank"><i class="ri-linkedin-fill"></i></a>
+					<a href="https://github.com/willianow" target="_blank"><i class="ri-github-fill"></i></a>
+					<a href="https://www.instagram.com/williano.w" target="_blank"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="about" class="about-section reveal-section">
+            <div class="shimmer-bg"></div>
+			<h2 class="slide-in">About</h2>
+			<p class="text-justify fade-in">We are a team of students from the Faculty of Vocational Studies, Universitas Brawijaya who are working on the Cloud Computing assignment. This task aims to implement our knowledge of cloud technology in the development of scalable and efficient applications. With a combination of expertise and a spirit of collaboration, we strive to create innovative solutions that solve real problems in the world of information technology.</p>
+		</div>
+
+		<div id="jobdesk" class="jobdesk-section reveal-section">
+			<h2 class="slide-in">Jobdesk</h2>
+			<div class="jobdesk-container">
+				<div class="jobdesk-card scale-in" style="transition-delay: 0.1s;">
+					<h3>Feby Putri</h3>
+					<p>Web Developer & Document structuring</p>
+					<ul>
+						<li>Coding website</li>
+						<li>Website design</li>
+						<li>Report organization and Power Point</li>
+					</ul>
+				</div>
+				<div class="jobdesk-card scale-in" style="transition-delay: 0.2s;">
+					<h3>Ibnu Faiz</h3>
+					<p>Simulation Research</p>
+					<ul>
+						<li>Introduction Cloud Computing</li>
+						<li>Scenario Creation</li>
+						<li>Cloud services implementation</li>
+					</ul>
+				</div>
+				<div class="jobdesk-card scale-in" style="transition-delay: 0.3s;">
+					<h3>Ananda Abidin</h3>
+					<p>Microsoft Azure Monitorig</p>
+					<ul>
+						<li>Editing</li>
+						<li>Responsive design implementation</li>
+						<li>Help create ideas for the website</li>
+					</ul>
+				</div>
+				<div class="jobdesk-card scale-in" style="transition-delay: 0.4s;">
+					<h3>Salman Alfarizi</h3>
+					<p>Microsoft Azure Tutorial</p>
+					<ul>
+						<li>Microsoft Azure testing implementation</li>
+						<li>Microsoft Azure step by step setup</li>
+						<li>Microsoft Azure recording tutorial</li>
+					</ul>
+				</div>
+				<div class="jobdesk-card scale-in" style="transition-delay: 0.5s;">
+					<h3>Williano Wongso</h3>
+					<p>Documentation</p>
+					<ul>
+						<li>Diagram arsitektur vs Cloud Computing</li>
+						<li>Tutorial Azure Documentation</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="thanks" class="thank-you reveal-section">
+            <div class="pulse-bg"></div>
+            <h2 class="slide-in">Thank You</h2>
+			<p class="fade-in">We thank you for your attention and support. Hopefully this assignment can provide benefits and inspiration for all</p>
+		</div>
+
+		<div class="footer">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h3>Group 6 Team</h3>
+					<p>Fakulty of Vocational</p>
+					<p>University of Brawijaya</p>
+					<p>Malang, Indonesia</p>
+				</div>
+				<div class="footer-section">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#jobdesk">Jobdesk</a></li>
+						<li><a href="#team">Team</a></li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h3>Connect With Us</h3>
+					<div class="footer-social">
+						<a href="https://github.com/group6team" class="social-hover"><i class="ri-github-fill"></i></a>
+						<a href="https://www.linkedin.com/company/group6team" class="social-hover"><i class="ri-linkedin-fill"></i></a>
+						<a href="https://www.instagram.com/group6team" class="social-hover"><i class="ri-instagram-fill"></i></a>
+						<a href="https://twitter.com/group6team" class="social-hover"><i class="ri-twitter-fill"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2025 Cloud Computing Group 6 Team. All Rights Reserved.</p>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		// Set current date with month name
+		const now = new Date();
+		const monthNames = ["January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December"];
+		const formattedDate = `${now.getDate()} ${monthNames[now.getMonth()]} ${now.getFullYear()}`;
+		document.getElementById('current-date').textContent = formattedDate;
+		
+		// Smooth scrolling for navigation
+		document.querySelectorAll('nav a').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+				
+				const targetId = this.getAttribute('href');
+				const targetElement = document.querySelector(targetId);
+				
+				window.scrollTo({
+					top: targetElement.offsetTop - 100,
+					behavior: 'smooth'
+				});
+				
+				// Update active link
+				document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+				this.classList.add('active');
+			});
+		});
+		
+		// Update active link on scroll
+		window.addEventListener('scroll', function() {
+			const sections = document.querySelectorAll('section > div[id]');
+			let current = '';
+			
+			sections.forEach(section => {
+				const sectionTop = section.offsetTop - 150;
+				if (window.pageYOffset >= sectionTop) {
+					current = section.getAttribute('id');
+				}
+			});
+			
+			document.querySelectorAll('nav a').forEach(a => {
+				a.classList.remove('active');
+				if (a.getAttribute('href') === '#' + current) {
+					a.classList.add('active');
+				}
+			});
+		});
+        
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mainNav = document.querySelector('.main-nav');
+
+        mobileMenu.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                mainNav.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Reveal animations on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const revealSections = document.querySelectorAll('.reveal-section');
+            const slideElements = document.querySelectorAll('.slide-in');
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const scaleElements = document.querySelectorAll('.scale-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            revealSections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            slideElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            scaleElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+	</script>
+
+    <!-- Add this particle network script at the end of the body, just before the closing </body> tag -->
+    <script>
+        // Particle network background
+        document.addEventListener('DOMContentLoaded', function() {
+            const canvas = document.getElementById('particleCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Set canvas size
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+            
+            // Particle settings
+            const particleCount = 80;
+            const particles = [];
+            const connectionDistance = 150;
+            const mouseRadius = 150;
+            
+            // Mouse position
+            let mouse = {
+                x: null,
+                y: null,
+                radius: mouseRadius
+            };
+            
+            window.addEventListener('mousemove', function(event) {
+                mouse.x = event.x;
+                mouse.y = event.y;
+            });
+            
+            // Create particles
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.size = Math.random() * 1.5 + 0.5;
+                    this.speedX = Math.random() * 0.5 - 0.25;
+                    this.speedY = Math.random() * 0.5 - 0.25;
+                    this.color = `rgba(${Math.floor(Math.random() * 50) + 150}, ${Math.floor(Math.random() * 50) + 150}, ${Math.floor(Math.random() * 100) + 155}, 0.7)`;
+                }
+                
+                update() {
+                    // Move particles
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+                    
+                    // Bounce off edges
+                    if (this.x > canvas.width || this.x < 0) {
+                        this.speedX = -this.speedX;
+                    }
+                    if (this.y > canvas.height || this.y < 0) {
+                        this.speedY = -this.speedY;
+                    }
+                    
+                    // Mouse interaction
+                    if (mouse.x != null && mouse.y != null) {
+                        const dx = mouse.x - this.x;
+                        const dy = mouse.y - this.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (distance < mouse.radius) {
+                            const angle = Math.atan2(dy, dx);
+                            const force = (mouse.radius - distance) / mouse.radius;
+                            
+                            this.x -= Math.cos(angle) * force * 2;
+                            this.y -= Math.sin(angle) * force * 2;
+                        }
+                    }
+                }
+                
+                draw() {
+                    ctx.fillStyle = this.color;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+            
+            function init() {
+                for (let i = 0; i < particleCount; i++) {
+                    particles.push(new Particle());
+                }
+            }
+            
+            function connectParticles() {
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (distance < connectionDistance) {
+                            const opacity = 1 - (distance / connectionDistance);
+                            ctx.strokeStyle = `rgba(162, 155, 254, ${opacity * 0.4})`;
+                            ctx.lineWidth = 0.5;
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+            
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                for (let i = 0; i < particles.length; i++) {
+                    particles[i].update();
+                    particles[i].draw();
+                }
+                
+                connectParticles();
+                requestAnimationFrame(animate);
+            }
+            
+            init();
+            animate();
+            
+            // Reset mouse position when mouse leaves window
+            window.addEventListener('mouseout', function() {
+                mouse.x = null;
+                mouse.y = null;
+            });
+        });
+    </script>
+
+    <!-- Add this script to pause floating animation on hover -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add CSS to pause animation on hover
+            const style = document.createElement('style');
+            style.textContent = `
+                .box.floating:hover {
+                    animation-play-state: paused;
+                }
+                
+                /* Make sure the icons are clearly clickable */
+                .icons a {
+                    display: inline-block;
+                    padding: 8px;
+                    position: relative;
+                    z-index: 10;
+                }
+                
+                .icons a:hover i {
+                    transform: scale(1.3);
+                    color: #a29bfe;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
